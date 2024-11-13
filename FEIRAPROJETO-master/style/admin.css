@@ -1,0 +1,125 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #a8cfa9;
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    display: flex;
+    color: white;
+    background-color: #b34db2;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+}
+nav a:hover{
+    color: #4cb24d;
+}
+nav li{
+    list-style-type: none;
+}
+.sistema{
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px)
+}
+.sistema-texto{
+    width: 40%;
+    height: auto;
+}
+.sistema img{
+    width: 40%;
+    height: auto;
+}
+form{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border: 2px solid #b34db2 ;
+    padding: 20px;
+}
+input{
+    margin: 10px auto;
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+.entrar{
+    background-color: #4cb24d;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 150px ;
+}
+.entrar:hover{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color:#4cb24d;
+    cursor: pointer;
+}
+label{
+    color:#b34db2;
+    font-weight: 800;
+}
+.cadastrarbtn{
+    background-color: #4cb24d;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 110px ;
+    margin-right: 10px;
+}
+.cadastrarbtn:hover{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color:#4cb24d;
+    cursor: pointer;
+}
+.limparbtn{
+    background-color: #96077e;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 110px;
+}
+.limparbtn:hover{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color:#9b0079;
+    cursor: pointer;
+}
+table {
+    width: 1200px;
+    border-collapse: collapse; 
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center; 
+    border: 2px solid #9b0079; 
+}
+
+th {
+    background-color: #b34db2; 
+    color: white; 
+    font-weight: bold;
+}

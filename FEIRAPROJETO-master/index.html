@@ -1,0 +1,82 @@
+ <!-- Juan Adrian de Souza Pinheiro - 65369671 --> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeiraJASP</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <nav>
+        <li><a href="#sobre">Ínicio</a></li>
+        <li><a href="#infos">Infos</a></li>
+        <li><a href="#contato">Contato</a></li> 
+        <li><a href="#" onclick="abrirModal()">Login</a></li>
+    </nav>
+    <main>
+        <section class="sobre" id="sobre">
+            <div class="sobre-texto">
+            <h1 style="color: #bf81be; text-align: center;">QUEM SOMOS?</h1>
+            <p>Somos uma feira de design que celebra o talento e a criatividade em cada esquina! Aqui, artistas independentes, designers inovadores e criadores com ideias únicas se encontram para expor suas criações, conectar-se com o público e impulsionar o futuro do design. Inspirada nas melhores feiras de design do mundo, nossa proposta é oferecer um espaço aberto e inclusivo para que jovens talentos e grandes ideias possam brilhar e surpreender.</p>
+            <br>
+            <p>Nossa feira é uma experiência vibrante onde você encontrará desde peças de moda a arte visual, design sustentável e soluções criativas. Cada expositor traz algo especial, valorizando o que é autêntico e original. O público jovem, apaixonado por inovação e arte, é parte essencial desse movimento, interagindo diretamente com os criadores e descobrindo novas inspirações em cada detalhe.</p>
+            <br>
+            <p>Se você é artista, designer ou alguém que ama o universo criativo, aqui é o seu lugar! Juntos, vamos quebrar barreiras, celebrar o design e transformar ideias em experiências.</p>
+            <br>
+        </div>
+            <img src="./style/assets/WhatsApp Image 2024-11-11 at 08.40.23.jpeg" alt="feirajasp">
+        </section>
+        <section class="container infos" style="background-color: #bf81be;" id="infos">
+            <img src="./style/assets/10585204.png" alt="imagem explodindo arte">
+            <div class="infos-texto">
+            <h1 style="color: #a8cfa9; text-align: center;">INFORMAÇÕES!</h1>
+            <br>
+            <p>A Feira de Design é um evento vibrante que reúne o melhor da cultura criativa em um espaço único no coração de Curitiba. Este ano, estaremos localizados na Praça 29 de Março, trazendo uma experiência completa para todos os amantes de design, arte e gastronomia.</p>
+            <br>
+            <h3>Artes!</h3>
+            <p>Explore uma variedade de obras de artistas locais e regionais, que apresentarão suas criações em diferentes meios, como pintura, escultura e design gráfico. Além disso, haverá oficinas interativas onde os participantes poderão aprender novas técnicas e desenvolver suas habilidades artísticas. Os expositores terão a oportunidade de interagir com o público, oferecendo insights sobre seus processos criativos e inspirações.</p>
+            <br>
+            <h3>Gastronomia</h3>
+            <p>A gastronomia também será um destaque da feira, com uma seleção de food trucks e estandes que oferecerão delícias locais e internacionais. Desde pratos tradicionais curitibanos até opções vegetarianas e veganas, há algo para todos os gostos. Venha experimentar sabores únicos enquanto aprecia as obras de arte ao seu redor.</p>
+            <br>
+            <h3>Muita Música!!!</h3>
+            <p>Os DJ sets proporcionarão um ambiente animado e envolvente, com performances de DJs locais que trarão ritmos variados para criar uma atmosfera festiva. Prepare-se para dançar e se divertir enquanto explora a feira!</p>
+            <br>
+            <h2>DATA E LOCAL!</h2>
+            <p><b>Local:</b> Praça 29 de Março, Centro de Curitiba</p>
+            <p><b>Data:</b> 17/11/2024</p>
+        </div>
+        </section>
+        <section class="container contato" style="background-color: #a8cfa9;" id="contato">
+            <div class="contato-texto">
+                <h1 style="color: #bf81be; text-align: center;">ENTRE EM CONTATO</h1>
+                <p>Para consultas sobre como se tornar um expositor, informações sobre patrocínios ou outras questões relacionadas ao evento, não hesite em nos procurar.</p>
+                <br>
+                <h3>E-mail</h3>
+                <p>contato@feirajasp.com</p>
+                <br>
+                <h3>Telefone/WhatsApp</h3>
+                <p>(41)99999-9999 <br><br>
+                Disponíveis de segunda a sexta, das 9h às 18h.</p>
+                <br>
+                <h3>Endereço</h3>
+                <p>Rua XV de Novembro, 1234 - Centro, Curitiba - PR, 80010-000</p>
+            </div>
+            <img src="./style/assets/POP_ART_BG_02.jpg" alt="">
+        </section>
+    </main>
+
+    <div class="fundomodal" id="fundomodal">
+    <div class="modal" id="modal">
+        <form action="" method="post">
+            <h1 style="color: #a8cfa9;">PREENCHA OS CAMPOS!</h1>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" required><br>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required><br>
+            <input type="submit" onclick="login(); return false" value="Entrar" class="entrar">
+        </form>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

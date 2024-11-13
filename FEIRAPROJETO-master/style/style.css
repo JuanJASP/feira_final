@@ -1,0 +1,230 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #a8cfa9;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    color: white;
+    background-color: #b34db2;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #4cb24d;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.sobre {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    width: 1200px;
+    margin: auto;
+    min-height: calc(100vh - 60px);
+    align-items: center; 
+}
+
+.sobre-texto {
+    width: 100%;
+    height: auto;
+}
+
+.sobre img {
+    width: 100%;
+    height: 450px;
+    border-radius: 100%;
+    transform: rotate(-40deg);
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    width: 1200px;
+    margin: auto;
+}
+
+.infos-texto {
+    width: 100%;
+    height: auto;
+}
+
+.infos img {
+    width: 100%;
+    height: 600px;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    width: 1200px;
+    margin: auto;
+}
+
+.contato-texto {
+    width: 100%;
+    height: auto;
+}
+
+.contato img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    transform: rotate(40deg);
+}
+
+.fundomodal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #00000080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    display: flex;
+    background-color: #874687;
+    width: 600px;
+    height: 280px;
+    margin: auto;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+input {
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.entrar {
+    background-color: #4cb24d;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 150px;
+}
+
+.entrar:hover {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color: #4cb24d;
+    cursor: pointer;
+}
+
+.fundomodal.abrir {
+    display: flex;
+}
+
+
+@media (min-width: 1024px) {
+    .container, .sobre, .infos, .contato {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container, .sobre, .infos, .contato {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre img, .infos img, .contato img {
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        height: 50px;
+    }
+    nav a {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+        margin-right: 0;
+        font-size: 12px;
+    }
+    .sobre, .infos, .contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobre img, .infos img, .contato img {
+        width: 100%;
+        height: auto;
+        transform: none; 
+    }
+    .modal {
+        width: 80%;
+    }
+    input {
+        width: 90%;
+    }
+    .entrar {
+        width: 100px;
+    }
+}
+
+

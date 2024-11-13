@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="../style/admin.css">
+</head>
+<body>
+    <nav>
+        <li><a href="cadastrarexp.html">Cadastrar Expositor</a></li>
+        <li><a href="cadastarart.html">Cadastrar Artista</a></li>
+        <li><a href="cadastrarprod.html">Cadastrar Produto</a></li> 
+        <li><a href="../index.html" onclick="sair()">Sair</a></li> 
+    </nav>
+    
+    <main>
+        <section>
+            <h1 style="color: #bf81be; text-align: center;">CADASTRO DE PRODUTOS</h1>
+            <h3 style="text-align: center;">Informe os dados do produto:</h3>
+        </section>
+        <section>
+            <form action="" method="post" id="cadproduto">
+                <label for="idProduto">ID</label><br>
+                <input type="text" id="idProduto" name="idProduto" placeholder="ID do Produto" ><br>
+                <label for="nomeProduto">Nome do Produto</label><br>
+                <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Nome do Produto" ><br>
+                <label for="tipoProduto">Tipo</label><br>
+                <input type="text" id="tipoProduto" name="tipoProduto" placeholder="Tipo do Produto"><br>
+                <label for="precoUnitario">Preço Unitário</label><br>
+                <input type="tel" id="precoUnitario" name="precoUnitario" placeholder="Preço Unitário" ><br>
+                <label for="cuidadosProduto">Cuidados</label><br>
+                <input type="text" id="cuidadosProduto" name="cuidadosProduto" placeholder="Cuidados com o Produto" ><br>
+                <label for="quantidadeProduto">Quantidade</label><br>
+                <input type="text" id="quantidadeProduto" name="quantidadeProduto" placeholder="Quantidade" ><br>
+                <input type="submit" value="Cadastrar" class="cadastrarbtn">
+                <input type="reset" value="Limpar" class="limparbtn">
+            </form>            
+        </section>
+        <section>
+            <table class="tabela">
+                <h1 style="color: #bf81be; text-align: center;">RELATÓRIO: PRODUTOS CADASTRADOS</h1>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Preço Unitário</th>
+                        <th>Cuidados</th>
+                        <th>Quantidade</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <script src="script/script.js"></script>
+    <script src="../script/produtos.js"></script>
+</body>
+</html>
